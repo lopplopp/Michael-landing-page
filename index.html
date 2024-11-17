@@ -1,128 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael's portfolio</title>
-    <link rel="stylesheet" href="./src/output.css">
-</head>
-<body class="bg-gray-800 text-white">
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-gray-800 text-white">
     <header>
-        <div class="fixed top-0 w-full bg-gray-800/70">
-            <ul class="flex justify-end gap-x-10 m-5 mr-10 text-xl font-medium ">
-                <li class="hover:text-gray-300 transition duration-300"><a href="#about">About</a></li>
-                <li class="hover:text-gray-300 transition duration-300"><a href="#projects">Projects</a></li>
-                <li class="hover:text-gray-300 transition duration-300"><a href="#skills">Skills</a></li>
-                <li class="hover:text-gray-300 transition duration-300"><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="fixed top-0 w-full bg-gray-800/70">
+        <ul class="flex justify-end gap-x-10 m-5 mr-10 text-xl font-medium">
+          <li class="hover:text-gray-300 transition duration-300">
+            <a href="#about">About</a>
+          </li>
+          <li class="hover:text-gray-300 transition duration-300">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="hover:text-gray-300 transition duration-300">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="hover:text-gray-300 transition duration-300">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="mx-56">
-        <section>
-            <div class="h-screen  flex flex-col justify-center items-center ">
-                <div>
-                    <h1 class="text-7xl font-bold">Hi, I'm Michael</h1>
-                    <h1 class="text-7xl font-bold">I'm a frontend web developer</h1>
-                </div>
-            </div>
-        </section>
+    <main class="md:mx-56 mx-16">
+      <section>
+        <div class="h-screen flex flex-col justify-center items-center">
+          <div>
+            <h1 class="text-7xl font-bold">Hi, I'm Michael</h1>
+            <h1 class="text-7xl font-bold">I'm a frontend web developer</h1>
+          </div>
+        </div>
+      </section>
 
-        <section id="about" class="py-16">
+      <section id="about" class="py-16">
+        <div>
+          <h2 class="text-6xl font-bold my-9">About me</h2>
+          <div class="grid lg:grid-cols-3 gap-x-10 text-xl">
+            <p class="lg:col-span-2 row-start-2 lg:row-start-1">
+              My name is Michael Poon, and I’m an aspiring frontend web
+              developer based in Hong Kong. My interest in technology began
+              during my university years in Toronto, where I majored in
+              Information Technology. Although I initially pursued a different
+              career path after graduation, my passion for web development was
+              reignited in 2023 when I returned to Hong Kong for family reasons.
+              Since then, I’ve been dedicated to self-learning through The Odin
+              Project and building personal projects. Today, I’ve equipped
+              myself with essential skills and have created numerous projects
+              that demonstrate my growth and commitment to the field.
+            </p>
             <div>
-                <h2 class="text-6xl font-bold my-9">About me</h2>
-                <div class="grid grid-cols-3 gap-x-10 text-xl">
-                    <p class="col-span-2">My name is Michael Poon, and I’m an aspiring frontend web developer based in Hong Kong. My interest in technology began during my university years in Toronto, where I majored in Information Technology. Although I initially pursued a different career path after graduation, my passion for web development was reignited in 2023 when I returned to Hong Kong for family reasons. Since then, I’ve been dedicated to self-learning through The Odin Project and building personal projects. Today, I’ve equipped myself with essential skills and have created numerous projects that demonstrate my growth and commitment to the field.</p>
-                    <div>
-                        <img src="./image/profile pic.jpg" alt="" class="rounded-2xl">
-                    </div>
-                </div>
+              <img src="./image/profile pic.jpg" alt="" class="rounded-2xl" />
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="projects" class="py-16">
-            <div class="space-y-20">
-                <h2 class="text-6xl font-bold mb-24">Projects</h2>
-                <div class="grid grid-cols-2 my-5 gap-7">
-                    <div>
-                        <h3 class="text-3xl mb-5 font-semibold">HoloStream</h3>
-                        <p class="text-xl">Holostream is a website that tracks current and upcoming livestreams of the Hololive VTuber group on YouTube. Built with React and styled using CSS and Tailwind, it fetches data from the Holodex API to display the relevant information based on user preferences.</p>
-
-                    </div>
-                    <div class="overflow-hidden rounded-xl">
-                        <a href="https://holostream.netlify.app/" target="_blank" class="h-full">
-                            <img src="./image/hololive-stream-image.png" alt="Hololive Stream" class="h-full hover:scale-105 transition duration-700 ease-in-out">
-                        </a>
-                    </div>
-                </div>
-                <div class="grid grid-cols-2 my-5 gap-7">
-                    <div>
-                        <h3 class="text-3xl mb-5 font-semibold">Weather App</h3>
-                        <p class="text-xl">The Weather App is designed to provide real-time weather updates and forecasts for any location worldwide. Developed with JavaScript and styled using CSS, the app fetches accurate weather data through integration with third-party APIs.</p>
-
-                    </div>
-                    <div class="overflow-hidden rounded-xl">
-                        <a href="https://lopplopp.github.io/WeatherApp/" target="_blank" class="h-full">
-                            <img src="./image/weather app image.png" alt="weather" class="h-full hover:scale-105 transition duration-700 ease-in-out">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="py-16">
+      <section id="projects" class="py-16">
+        <div class="space-y-20">
+          <h2 class="text-6xl font-bold mb-24">Projects</h2>
+          <div class="grid lg:grid-cols-2 my-5 gap-7">
             <div>
-                <h2 class="text-6xl font-bold mb-24">Skills</h2>
-                <div>
-                    <h3 class="text-3xl my-16 font-semibold">Languages and Frameworks</h3>
-                    <div class="flex justify-between ">
-                        <div class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300">
-                            <img src="./icon/html5-logo.svg" alt="html icon" class="w-28">
-                            <p>HTML5</p>
-                        </div>
-                        <div class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300">
-                            <img src="./icon/css3-logo.svg" alt="css icon" class="w-28">
-                            <p>CSS3</p>
-                        </div>
-                        <div class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300">
-                            <img src="./icon/js-logo.svg" alt="js icon" class="w-28">
-                            <p>Javascript</p>
-                        </div>
-                        <div class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300">
-                            <img src="./icon/react-logo.svg" alt="react icon" class="w-28">
-                            <p>React</p>
-                        </div>
-                        <div class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300">
-                            <img src="./icon/tailwind-logo.svg" alt="tailwind icon" class="w-28">
-                            <p>Tailwind CSS</p>
-                        </div>
-                    </div>
-                </div>
+              <h3 class="text-3xl mb-5 font-semibold">HoloStream</h3>
+              <p class="text-xl">
+                Holostream is a website that tracks current and upcoming
+                livestreams of the Hololive VTuber group on YouTube. Built with
+                React and styled using CSS and Tailwind, it fetches data from
+                the Holodex API to display the relevant information based on
+                user preferences.
+              </p>
             </div>
-        </section>
+            <div class="overflow-hidden rounded-xl">
+              <a
+                href="https://holostream.netlify.app/"
+                target="_blank"
+                class="h-full"
+              >
+                <img
+                  src="./image/hololive-stream-image.png"
+                  alt="Hololive Stream"
+                  class="h-full hover:scale-105 transition duration-700 ease-in-out"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="grid  lg:grid-cols-2 my-5 gap-7">
+            <div>
+              <h3 class="text-3xl mb-5 font-semibold">Weather App</h3>
+              <p class="text-xl">
+                The Weather App is designed to provide real-time weather updates
+                and forecasts for any location worldwide. Developed with
+                JavaScript and styled using CSS, the app fetches accurate
+                weather data through integration with third-party APIs.
+              </p>
+            </div>
+            <div class="overflow-hidden rounded-xl">
+              <a
+                href="https://lopplopp.github.io/WeatherApp/"
+                target="_blank"
+                class="h-full"
+              >
+                <img
+                  src="./image/weather app image.png"
+                  alt="weather"
+                  class="h-full hover:scale-105 transition duration-700 ease-in-out"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="py-16">
-                <h2 class="text-6xl font-bold mb-10">Contact me</h2>
-                <p class="text-xl mb-10">Currently open for new opportunities or people to share ideas with! For any other information about me or my work, feel free to reach out!</p>
-                <div class="flex justify-between text-lg">
-                    <div>
-                        <p>Contact me at</p>
-                        <a href="mailto:michaelpoonhowan@hotmail.com" target="_blank" class="underline">michaelpoonhowan@hotmail.com</a>
-                    </div>
-                    <div>
-                        <p>or find me here</p>
-                        <a href="https://github.com/lopplopp" target="_blank" class="w-2">
-                            <img src="./icon/github-icon.svg" alt="github" class="w-8">
-                        </a>
-                    </div>
-                </div>
-        
-        
-            </section>
+      <section id="skills" class="py-16">
+        <div>
+          <h2 class="text-6xl font-bold mb-24">Skills</h2>
+          <div>
+            <h3 class="text-3xl my-16 font-semibold">
+              Languages and Frameworks
+            </h3>
+            <div class="flex justify-between">
+              <div
+                class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300"
+              >
+                <img src="./icon/html5-logo.svg" alt="html icon" class="w-28" />
+                <p>HTML5</p>
+              </div>
+              <div
+                class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300"
+              >
+                <img src="./icon/css3-logo.svg" alt="css icon" class="w-28" />
+                <p>CSS3</p>
+              </div>
+              <div
+                class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300"
+              >
+                <img src="./icon/js-logo.svg" alt="js icon" class="w-28" />
+                <p>Javascript</p>
+              </div>
+              <div
+                class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300"
+              >
+                <img
+                  src="./icon/react-logo.svg"
+                  alt="react icon"
+                  class="w-28"
+                />
+                <p>React</p>
+              </div>
+              <div
+                class="flex flex-col items-center w-fit hover:-translate-y-3 transition duration-300"
+              >
+                <img
+                  src="./icon/tailwind-logo.svg"
+                  alt="tailwind icon"
+                  class="w-28"
+                />
+                <p>Tailwind CSS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="py-16">
+        <h2 class="text-6xl font-bold mb-10">Contact me</h2>
+        <p class="text-xl mb-10">
+          Currently open for new opportunities or people to share ideas with!
+          For any other information about me or my work, feel free to reach out!
+        </p>
+        <div class="flex justify-between text-lg">
+          <div>
+            <p>Contact me at</p>
+            <a
+              href="mailto:michaelpoonhowan@hotmail.com"
+              target="_blank"
+              class="underline"
+              >michaelpoonhowan@hotmail.com</a
+            >
+          </div>
+          <div>
+            <p>or find me here</p>
+            <a href="https://github.com/lopplopp" target="_blank" class="w-2">
+              <img src="./icon/github-icon.svg" alt="github" class="w-8" />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
-
-    
-
-    
-</body>
+  </body>
 </html>
