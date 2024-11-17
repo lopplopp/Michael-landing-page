@@ -562,25 +562,17 @@ video {
   top: 0px;
 }
 
-.col-span-2 {
-  grid-column: span 2 / span 2;
-}
-
 .row-start-2 {
   grid-row-start: 2;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
 }
 
 .m-5 {
   margin: 1.25rem;
 }
 
-.mx-56 {
-  margin-left: 14rem;
-  margin-right: 14rem;
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .my-16 {
@@ -598,9 +590,14 @@ video {
   margin-bottom: 2.25rem;
 }
 
-.mx-16 {
-  margin-left: 4rem;
-  margin-right: 4rem;
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .mb-10 {
@@ -654,18 +651,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -754,6 +739,16 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -812,49 +807,16 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:row-start-2 {
-    grid-row-start: 2;
-  }
-
-  .sm\:mx-10 {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .sm\:mx-16 {
     margin-left: 4rem;
     margin-right: 4rem;
   }
-
-  .sm\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (min-width: 768px) {
-  .md\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
-  .md\:row-start-1 {
-    grid-row-start: 1;
-  }
-
   .md\:mx-56 {
     margin-left: 14rem;
     margin-right: 14rem;
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -867,20 +829,26 @@ video {
     grid-row-start: 1;
   }
 
-  .lg\:mx-56 {
-    margin-left: 14rem;
-    margin-right: 14rem;
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .lg\:grid-cols-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
-  .lg\:grid-rows-2 {
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
