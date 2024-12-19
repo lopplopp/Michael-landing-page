@@ -562,6 +562,14 @@ video {
   top: 0px;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
+.z-40 {
+  z-index: 40;
+}
+
 .row-start-2 {
   grid-row-start: 2;
 }
@@ -570,9 +578,9 @@ video {
   margin: 1.25rem;
 }
 
-.mx-0 {
-  margin-left: 0px;
-  margin-right: 0px;
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .my-16 {
@@ -588,16 +596,6 @@ video {
 .my-9 {
   margin-top: 2.25rem;
   margin-bottom: 2.25rem;
-}
-
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
-.mx-6 {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
 }
 
 .mb-10 {
@@ -692,6 +690,10 @@ video {
   overflow: hidden;
 }
 
+.\!scroll-smooth {
+  scroll-behavior: smooth !important;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -712,6 +714,19 @@ video {
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-3xl {
@@ -737,16 +752,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -788,6 +793,10 @@ video {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html, body, #root{
+  scroll-behavior: smooth;
 }
 
 .hover\:-translate-y-3:hover {
@@ -835,16 +844,6 @@ video {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .lg\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .lg\:text-xl {

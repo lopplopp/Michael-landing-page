@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="!scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Michael's portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+TC:wght@100..900&family=Playwrite+BE+VLG:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-gray-800 text-white">
-    <header>
+  <body class="bg-gray-800 text-white font-lato">
+    <header class="z-40">
       <div class="fixed top-0 w-full bg-gray-800/70">
         <ul class="flex justify-end gap-x-10 m-5 mr-10 text-xl font-medium">
           <li class="hover:text-gray-300 transition duration-300">
@@ -40,13 +46,15 @@
         <div>
           <h2 class="text-6xl font-bold my-9">About me</h2>
           <div class="grid lg:grid-cols-3 gap-x-10 text-xl">
-            <p class="lg:col-span-2 lg:text-xl text-3xl row-start-2 lg:row-start-1">
+            <p
+              class="lg:col-span-2 lg:text-xl text-center text-2xl row-start-2 lg:row-start-1"
+            >
               My name is Michael Poon, and I’m an aspiring frontend web
               developer based in Hong Kong. My interest in technology began
               during my university years in Toronto, where I majored in
               Information Technology. Although I initially pursued a different
               career path after graduation, my passion for web development was
-              reignited in 2023 when I returned to Hong Kong for family reasons.
+              reignited in 2023 when I returned to Hong Kong.
               Since then, I’ve been dedicated to self-learning through The Odin
               Project and building personal projects. Today, I’ve equipped
               myself with essential skills and have created numerous projects
@@ -59,13 +67,13 @@
         </div>
       </section>
 
-      <section id="projects" class="py-16">
+      <section id="projects" class="py-16 z-0">
         <div class="space-y-20">
           <h2 class="text-6xl font-bold mb-24">Projects</h2>
           <div class="grid lg:grid-cols-2 my-5 gap-7">
             <div>
               <h3 class="text-3xl mb-5 font-semibold">HoloStream</h3>
-              <p class="lg:text-xl text-3xl">
+              <p class="lg:text-xl text-2xl">
                 Holostream is a website that tracks current and upcoming
                 livestreams of the Hololive VTuber group on YouTube. Built with
                 React and styled using CSS and Tailwind, it fetches data from
@@ -87,25 +95,29 @@
               </a>
             </div>
           </div>
-          <div class="grid  lg:grid-cols-2 my-5 gap-7">
+          <div class="grid lg:grid-cols-2 my-5 gap-7">
             <div>
-              <h3 class="text-3xl mb-5 font-semibold">Weather App</h3>
-              <p class="lg:text-xl text-3xl">
-                The Weather App is designed to provide real-time weather updates
-                and forecasts for any location worldwide. Developed with
-                JavaScript and styled using CSS, the app fetches accurate
-                weather data through integration with third-party APIs.
+              <h3 class="text-3xl mb-5 font-semibold">Anime Vault App</h3>
+              <p class="lg:text-xl text-2xl">
+                Explore and discover detailed information on anime from both
+                current and past seasons. The Anime Vault allows users to browse
+                seasonal anime releases, view detailed descriptions, and access
+                key information such as genres, ratings and characters. Built
+                with React and styled with TailwindCSS, this application ensures
+                a responsive and visually appealing user experience. The app
+                fetches anime data by integrating with the Jikan API, a RESTful
+                API for MyAnimeList.
               </p>
             </div>
             <div class="overflow-hidden rounded-xl">
               <a
-                href="https://lopplopp.github.io/WeatherApp/"
+                href="https://lopplopp.github.io/anime-vault/"
                 target="_blank"
                 class="h-full"
               >
                 <img
-                  src="./image/weather app image.png"
-                  alt="weather"
+                  src="./image/anime vault.png"
+                  alt="anime vault website"
                   class="h-full hover:scale-105 transition duration-700 ease-in-out"
                 />
               </a>
